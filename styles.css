@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(232, 241, 236);
+    margin: 0;
+    top: 0;
+    font-family: "Roboto";
+}
+
+.header {
+    background-color:white;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.custom-navbar a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #1b3bdc;
+    font-size: 1.1rem;
+    position: relative;
+    font-size: 700;
+}
+
+.custom-navbar a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    background-color: #000;
+    transition: .3s;
+}
+
+.custom-navbar a:hover::before {
+    width: 100%;
+}
